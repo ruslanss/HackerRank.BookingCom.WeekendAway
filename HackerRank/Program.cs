@@ -5,17 +5,17 @@ namespace HackerRank
 {
     public class Solution
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var noOfTests = Int32.Parse(Console.ReadLine());
-            for (int j = 0; j < noOfTests; j++)
+            var noOfTests = int.Parse(Console.ReadLine());
+            for (var j = 0; j < noOfTests; j++)
             {
                 var line2 = Console.ReadLine().Split(' ');
                 var numberOfLocations = Convert.ToInt32(line2[0]);
                 var numberOfRoads = Convert.ToInt32(line2[1]);
 
-                string[] roads = new string[numberOfRoads];
-                for (int i = 0; i < numberOfRoads; i++)
+                var roads = new string[numberOfRoads];
+                for (var i = 0; i < numberOfRoads; i++)
                 {
                     roads[i] = Console.ReadLine();
                 }
@@ -30,12 +30,12 @@ namespace HackerRank
         {
             var locations = new List<short>[numberOfLocations];
 
-            for (int i = 0; i < numberOfLocations; i++)
+            for (var i = 0; i < numberOfLocations; i++)
             {
                 locations[i] = new List<short>();
             }
 
-            foreach (string t in roads)
+            foreach (var t in roads)
             {
                 var ABD = t.Split(' ');
                 var distance = short.Parse(ABD[2]);
@@ -46,8 +46,8 @@ namespace HackerRank
                 locations[B].Add(distance);
             }
 
-            long minimal_result = Int64.MaxValue;
-            for (int i = 0; i < locations.Length; i++)
+            var minimal_result = long.MaxValue;
+            for (var i = 0; i < locations.Length; i++)
             {
                 var dist_smallest = short.MaxValue;
                 var dist_small = short.MaxValue;

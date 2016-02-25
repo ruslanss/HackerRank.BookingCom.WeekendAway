@@ -22,7 +22,7 @@ namespace HackerRank.Tests
             var inputs = GetTestCaseInputs(Cases.TestInput1);
             var outputs = GetTestCaseOutputs(Cases.TestOutput2);
 
-            for (int i = 0; i < inputs.Length; i++)
+            for (var i = 0; i < inputs.Length; i++)
             {
                 var result = Solution.GetResult(inputs[i].Roads, inputs[i].Locations);
 

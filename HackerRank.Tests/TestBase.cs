@@ -13,7 +13,7 @@ namespace HackerRank.Tests
             var noOfCases = Convert.ToInt32(lines.First());
             lines.RemoveAt(0);
 
-            for (int i = 0; i < noOfCases; i++)
+            for (var i = 0; i < noOfCases; i++)
             {
                 var line2 = lines[0].Split(' ');
                 var numberOfLocations = Convert.ToInt32(line2[0]);
