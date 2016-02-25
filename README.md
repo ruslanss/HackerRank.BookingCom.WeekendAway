@@ -1,5 +1,5 @@
 ﻿# HackerRank.BookingCom.WeekendAway
-## Booking.com > Hack a Holiday: City Break Edition > Weekend away
+### Booking.com > Hack a Holiday: City Break Edition > Weekend away
 
 Pete is tired of spending his weekends at home and wants to leave his apartment for a nice weekend getaway. After checking Villas.com for inspiration, he found a lot of countryside accommodations in locations L = [L[1] .. L[N]]. Now he plans to go to L[start], rent a car, travel to a few other locations from his list along the way until he reaches his final destination, location L[end], return the car there and head back home.
 
@@ -15,33 +15,43 @@ Pete isn’t worried about the distance from his apartment to L[start] or the di
 
 ##### Input Format
 
-The first line contains integer T, T test-cases follow. The first line of each test-case contains integer N that specifies the number of locations, followed by integer M that specifies the number of roads between locations. Locations have an id [1..N]. Each of the next M lines contains three space separated integers A, B and D, which correspond to a bi-directional road between A and B that has a length of D km.
+The first line contains integer `T`, `T` test-cases follow. The first line of each test-case contains integer N that specifies the number of locations, followed by integer M that specifies the number of roads between locations. Locations have an id `[1..N]`. Each of the next M lines contains three space separated integers A, B and D, which correspond to a bi-directional road between A and B that has a length of D km.
 
 ##### Constraints
 
-###### 1 <= T <= 10
-###### 3 <= N <= 10^5
-###### 2 <= M <= 4×10^5
-###### 1 <= D <= 100
+`1 <= T <= 10`
+
+`3 <= N <= 10^5`
+
+`2 <= M <= 4×10^5`
+
+`1 <= D <= 100`
 
 ##### Output Format
 
-T lines, each representing the minimal distance Pete needs to drive in km for test case i ∈ [1..T]. Note that there always will be a valid solution.
+`T` lines, each representing the minimal distance Pete needs to drive in km for test case `i ∈ [1..T]`. Note that there always will be a valid solution.
 
 ##### Sample Input
 
-###### 1
-###### 4 6
-###### 1 2 2
-###### 1 3 4
-###### 1 4 8
-###### 2 3 3
-###### 2 4 3
-###### 3 4 1
+`1`
+
+`4 6`
+
+`1 2 2`
+
+`1 3 4`
+
+`1 4 8`
+
+`2 3 3`
+
+`2 4 3`
+
+`3 4 1`
 
 ##### Sample Output
 
-###### 4
+`4`
 
 ##### Explanation
 
