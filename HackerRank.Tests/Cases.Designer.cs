@@ -61,6 +61,22 @@ namespace HackerRank.Tests {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1
+        ///4 6
+        ///1 2 2
+        ///1 3 4
+        ///1 4 8
+        ///2 3 3
+        ///2 4 3
+        ///3 4 1.
+        /// </summary>
+        internal static string TestInput0 {
+            get {
+                return ResourceManager.GetString("TestInput0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 10
         ///53 129
         ///52 33 30
@@ -116,9 +132,27 @@ namespace HackerRank.Tests {
         ///4 11 42
         ///44  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Test2 {
+        internal static string TestInput1 {
             get {
-                return ResourceManager.GetString("Test2", resourceCulture);
+                return ResourceManager.GetString("TestInput1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 31
+        ///39
+        ///28
+        ///32
+        ///29
+        ///31
+        ///29
+        ///34
+        ///24
+        ///20.
+        /// </summary>
+        internal static string TestOutput2 {
+            get {
+                return ResourceManager.GetString("TestOutput2", resourceCulture);
             }
         }
     }
